@@ -1,11 +1,17 @@
 * {
-   margin: 0;
+    margin: 0;
     padding: none;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
-div.top {  background-color: rgba(228, 200, 84, 0.203);
+
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+div.top {
+    background-color: rgba(228, 200, 84, 0.203);
     display: flex;
     justify-content: space-between;
     padding: 1.5em;
@@ -13,7 +19,7 @@ div.top {  background-color: rgba(228, 200, 84, 0.203);
 
 .top1 {
     width: 70%;
-    justify-content: start;  
+    justify-content: start;
 }
 
 .top1 p {
@@ -46,14 +52,20 @@ div.top {  background-color: rgba(228, 200, 84, 0.203);
 /* ----------------------------------------- */
 /* ----------------------------------------- */
 
-div.list ul, div.list2 ul, div.linklist, div.sociallist ul, div.footer ul {
+div.list ul,
+div.list2 ul,
+div.linklist,
+div.sociallist ul,
+div.footer ul {
     list-style: none;
     padding: 1.5em;
     /* background-color: rgb(0, 0, 0); */
 }
 
-div.list ul li, div.list2 ul li, div.linklist ul li, div.sociallist ul li
-{
+div.list ul li,
+div.list2 ul li,
+div.linklist ul li,
+div.sociallist ul li {
     display: inline;
     justify-content: left;
     /* width: 1em; */
@@ -65,7 +77,9 @@ div.list ul li img {
     width: 6rem;
 }
 
-div.list ul li a, div.list2 ul li a, div.linklist ul li a{
+div.list ul li a,
+div.list2 ul li a,
+div.linklist ul li a {
     /* color: #fff; */
     color: rgba(0, 0, 0, 0.758);
     text-decoration: none;
@@ -92,6 +106,34 @@ div.list ul li a.active {
     background-color: beige;
     color: #000;
 }
+
+/* ------------------------------------------------------ */
+/* -------------------------Nav bar---------------------- */
+/* ------------------------------------------------------ */
+
+.checkbtn {
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.683);
+    float: right;
+    margin-right: .5em;
+    margin-top: .5em;
+    cursor: pointer;
+    display: none;
+}
+
+#check, 
+#check2 {
+    display: none;
+}
+
+.imglogo {
+    display: none;
+}
+
+.under {
+    display: inline;
+}
+
 
 /* --------------------------------------------- */
 /* --------------------------------------------- */
@@ -135,7 +177,7 @@ div.list2 ul li a.fist {
 
 
 /* --------------------------------------------- */
-/* --------------------------------------------- */
+/* ------------------alltray-------------------- */
 /* --------------------------------------------- */
 
 .alltray {
@@ -196,8 +238,30 @@ p.last a {
     border-bottom: 1px dashed rgb(0, 81, 147);
 }
 
+
+@media screen and (max-width: 500px) {
+    .tray {
+        padding: 0;
+        display: block;
+        padding-top: 1.5em;
+    }
+
+    .tray1Head {
+        text-align: center;
+    }
+
+    div.alltray p.last {
+        padding: 0;
+        margin: 1.5em;
+        line-height: 1.5em;
+        font-size: larger;
+        justify-content: center;
+        color: rgba(0, 0, 0, 0.811);
+    }
+}
+
 /* ------------------------------------------------------- */
-/* ------------------------------------------------------- */
+/* -----------------------gal----------------------------- */
 /* ------------------------------------------------------- */
 
 .gal {
@@ -215,7 +279,7 @@ p.first {
 
 p.sec {
     padding: 1em;
-    width: 50%;
+    width: 60%;
     font-size: large;
     word-spacing: .1em;
     letter-spacing: .04em;
@@ -260,6 +324,44 @@ p.sec {
     line-height: 1.5em;
 }
 
+@media screen and (max-width: 500px) {
+    .gal {
+        padding: 0;
+        margin: 0;
+        /* background-color: #000; */
+    }
+
+    div.gal p.first {
+        margin: 0;
+        padding: 0;
+    }
+
+    p.first {
+        /* width: 90%; */
+        font-size: 1px;
+    }
+
+    p.sec {
+        width: 100%;
+    }
+
+    .imggal {
+        display: block;
+        padding: 1.5em;
+        width: 100%;
+    }
+
+    .img1 {
+        padding: 1em;
+        margin: 1em;
+        width: 75%;
+    }
+
+    .imggals {
+        width: 100%;
+    }
+}
+
 /* --------------------------------------------- */
 /* --------------------------------------------- */
 /* --------------------------------------------- */
@@ -269,11 +371,11 @@ p.sec {
     padding: .5em 4em;
 }
 
-.linklist ul li a{
+.linklist ul li a {
     font-size: 14px;
 }
 
-.linklist ul li span{
+.linklist ul li span {
     font-family: serif;
     font-size: 20px;
 }
@@ -304,16 +406,16 @@ div.footer ul li {
     color: rgba(5, 3, 3, 0.263);
 }
 
-div.footer1 ul > li > a{
+div.footer1 ul>li>a {
     color: rgba(5, 3, 3, 0.50);
     font-size: 12px;
 }
 
-div.footer1 ul > li > a:hover {
+div.footer1 ul>li>a:hover {
     border-bottom: 1px dotted #000;
 }
 
-div.footer1 ul > li {
+div.footer1 ul>li {
     padding-bottom: .7em;
 }
 
@@ -323,7 +425,7 @@ div.lastfooter {
     justify-content: space-between;
 }
 
-div.last ul li{
+div.last ul li {
     display: inline-flex;
     font-size: 12px;
     padding-right: 1.1em;
@@ -334,10 +436,80 @@ div.first {
     color: rgba(0, 0, 0, 0.591);
 }
 
-div.last a{
+div.last a {
     color: rgba(0, 0, 0, 0.514);
 }
 
 div.last a:hover {
     border-bottom: 1px dotted #000;
+}
+
+
+@media (max-width: 858px) {
+
+    /* .navbar */
+
+    .imglogo {
+        display: block;
+        padding: .5em;
+        width: 1px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    div.list ul, div.list2-in ul li.underlist{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #2c3e50;
+        top: 60px;
+        left: -110%;
+        text-align: center;
+    }
+
+    div.list ul li {
+        display: block;
+        padding: 1em;
+        font-size: large;
+    }
+
+    div.list ul li a {
+        color: #fff;
+    }
+
+    div.list ul li a:hover,
+    div.list ul li a.active {
+        background-color: rgba(255, 255, 255, 0);
+        padding: 1em;
+        width: 100%;
+        transition: .4s ease-in-out;
+    }
+
+    #check:checked~div.list ul,
+    #check2:checked~div.list2-in ul li a.underlist{
+        left: 0;
+    }
+
+    /* ------------------------------------------ */
+    /* ------------------------------------------ */
+    /* ------------------------------------------ */
+
+    a.under {
+        display: block;
+        /* background-color: rgba(255, 255, 255, 0); */
+    }
+
+    a.under:hover{
+        /* background-color: rgba(255, 255, 255, 0); */
+        /* padding: 1em; */
+        /* width: 100%; */
+    }
+
+    ul li.underlist a {
+        background-color: none;
+        color: #000;
+    }
+
 }
