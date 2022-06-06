@@ -448,6 +448,10 @@ div.last a:hover {
 @media (max-width: 858px) {
 
     /* .navbar */
+    
+    .list2 {
+        width: 100%;
+    }
 
     .imglogo {
         display: block;
